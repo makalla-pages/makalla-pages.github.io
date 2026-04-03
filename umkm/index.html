@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Makalla Pages | UMKM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #1e293b;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #334155;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .description {
+            color: #475569;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+
+        .contact {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 24px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .contact p {
+            margin: 8px 0;
+            font-size: 15px;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact span:first-child {
+            font-weight: 600;
+            width: 85px;
+            color: #0f172a;
+        }
+
+        .button {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background: #2563eb;
+            transform: scale(0.98);
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 13px;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 24px;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .contact p {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+            .contact span:first-child {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">🏪</div>
+        <h1>Makalla Pages</h1>
+        <div class="badge">UMKM • 2026</div>
+        
+        <div class="description">
+            Halaman sederhana untuk memulai kehadiran digital UMKM Anda. 
+            Bersih, ringan, dan mudah dikelola.
+        </div>
+
+        <div class="contact">
+            <p><span>📧 Email</span> <span>umkm@makalla.id</span></p>
+            <p><span>📞 Telepon</span> <span>+62 812 3456 7890</span></p>
+            <p><span>📍 Alamat</span> <span>Jl. Usaha Kecil No. 12, Jakarta</span></p>
+        </div>
+
+        <a href="#" class="button" id="contactBtn">📱 Hubungi Kami</a>
+        
+        <div class="footer">
+            © 2026 Makalla Pages — Siap untuk berkembang
+        </div>
+    </div>
+
+    <script>
+        // Tombol interaksi sederhana
+        const btn = document.getElementById('contactBtn');
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Silakan hubungi kami melalui email atau telepon yang tersedia.');
+        });
+    </script>
+</body>
+</html>
